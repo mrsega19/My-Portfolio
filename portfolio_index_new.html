@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shyam Gohel | UI/UX Portfolio</title>
+    <meta
+      name="description"
+      content="Animated UI/UX portfolio of Shyam Gohel, a designer, front-end learner, and AI/ML technology enthusiast from Ahmedabad."
+    />
+    <link rel="stylesheet" href="portfolio_styles_new.css" />
+  </head>
+  <body>
+    <div class="cursor-light" aria-hidden="true"></div>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <div class="ambient-stage" aria-hidden="true">
+      <span class="mesh mesh-one"></span>
+      <span class="mesh mesh-two"></span>
+      <span class="mesh mesh-three"></span>
+      <span class="orbit orbit-one"></span>
+      <span class="orbit orbit-two"></span>
+    </div>
+
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Shyam Gohel home">
+        <span>SG</span>
+        <strong>Shyam Gohel</strong>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow">UI/UX Designer | Front-End Learner | AI & ML Enthusiast</p>
+          <h1>
+            Building friendly interfaces with
+            <span>design sense</span>, web basics, and AI curiosity.
+          </h1>
+          <p class="hero-text">
+            I design clean screens, user flows, and responsive web experiences while learning new
+            tools quickly. My work blends Figma, front-end practice, and practical exposure to AI,
+            machine learning, Microsoft Copilot, and emerging technology.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary magnetic" href="#work">Explore Work</a>
+            <a class="button ghost magnetic" href="#contact">Contact Me</a>
+            <a class="button soft magnetic" href="ShyamG_Resume.pdf" target="_blank" rel="noreferrer">Resume PDF</a>
+          </div>
+          <dl class="hero-stats" aria-label="Portfolio highlights">
+            <div>
+              <dt data-count="5">0</dt>
+              <dd>Portfolio projects</dd>
+            </div>
+            <div>
+              <dt data-count="3">0</dt>
+              <dd>Internship / training programs</dd>
+            </div>
+            <div>
+              <dt data-count="12">0</dt>
+              <dd>Weeks AI/ML internship</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero-showcase" aria-label="Portfolio visual preview">
+          <div class="hero-device tilt-card">
+            <img src="assets/hero-portfolio.png" alt="Animated portfolio interface preview" />
+          </div>
+          <div class="floating-card card-research">
+            <span></span>
+            <strong>Research</strong>
+            <small>Requirements to flow</small>
+          </div>
+          <div class="floating-card card-prototype">
+            <span></span>
+            <strong>Prototype</strong>
+            <small>Clickable screen ideas</small>
+          </div>
+          <div class="floating-card card-ai">
+            <span></span>
+            <strong>AI Aware</strong>
+            <small>Copilot + ML basics</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="section intro-band reveal" aria-label="Profile">
+        <div>
+          <span class="section-kicker">Profile</span>
+          <h2>Clear layouts, simple flows, and a fast-learning mindset.</h2>
+        </div>
+        <p>
+          I enjoy turning requirements into clean digital screens, improving layouts for users,
+          and converting design ideas into readable front-end code. I am comfortable learning
+          new tools, collaborating with teams, and building practical user-friendly experiences.
+        </p>
+      </section>
+
+      <section class="section" id="work">
+        <div class="section-heading reveal">
+          <span class="section-kicker">Selected Work</span>
+          <h2>Project-wise visuals for product flows, food websites, streaming, and AI detection.</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card feature-card tilt-card reveal" data-theme="vedai">
+            <figure>
+              <img src="assets/project-vedai.png" alt="VedAI login and signup interface image" />
+            </figure>
+            <div class="project-content">
+              <p class="tag">Figma | Login Flow</p>
+              <h3>Login & Signup Page - VedAI Startup</h3>
+              <p>Clean signup and login screens for a tech startup with focused account entry and calm visual hierarchy.</p>
+              <ul class="project-points">
+                <li>Simple form layout</li>
+                <li>Startup-ready visual style</li>
+                <li>Clear action path</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card tilt-card reveal" data-theme="streamo">
+            <figure>
+              <img src="assets/project-streamo.png" alt="Streamo movie streaming website image" />
+            </figure>
+            <div class="project-content">
+              <p class="tag">Figma | Entertainment</p>
+              <h3>Streamo - Movie Streaming Website</h3>
+              <p>Sleek movie discovery landing page focused on browsing, previewing, and finding content quickly.</p>
+            </div>
+          </article>
+
+          <article class="project-card tilt-card reveal" data-theme="donoute">
+            <figure>
+              <img src="assets/project-donoute.png" alt="Donoute sweets and donut website image" />
+            </figure>
+            <div class="project-content">
+              <p class="tag">Figma | Food Brand</p>
+              <h3>Donoute - Donut Shop Website</h3>
+              <p>Colorful homepage concept for a sweets and donut shop with friendly product-focused sections.</p>
+            </div>
+          </article>
+
+          <article class="project-card tilt-card reveal" data-theme="pizza">
+            <figure>
+              <img src="assets/project-pizza.png" alt="Pizza order website image" />
+            </figure>
+            <div class="project-content">
+              <p class="tag">Figma | Ordering Flow</p>
+              <h3>Pizza Order Website</h3>
+              <p>Menu browsing, cart review, and checkout interface designed for quick ordering and easy scanning.</p>
+            </div>
+          </article>
+
+          <article class="project-card tilt-card reveal" data-theme="ai">
+            <figure>
+              <img src="assets/project-ai-surveillance.png" alt="AI powered surveillance dashboard image" />
+            </figure>
+            <div class="project-content">
+              <p class="tag">Python | AI/ML | OpenCV</p>
+              <h3>AI-Powered Border Defence and Surveillance</h3>
+              <p>Camera-feed monitoring concept using Python, OpenCV, and ML logic for detection and real-time alerts.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section process-section">
+        <div class="section-heading reveal">
+          <span class="section-kicker">Design Process</span>
+          <h2>From requirement to interface with a practical UI/UX workflow.</h2>
+        </div>
+        <div class="process-track">
+          <article class="reveal" data-step="01">
+            <span>01</span>
+            <h3>Understand</h3>
+            <p>Read requirements, identify user needs, and map the screen purpose.</p>
+          </article>
+          <article class="reveal" data-step="02">
+            <span>02</span>
+            <h3>Wireframe</h3>
+            <p>Sketch the flow, layout priority, and useful interaction path.</p>
+          </article>
+          <article class="reveal" data-step="03">
+            <span>03</span>
+            <h3>Design</h3>
+            <p>Create clean screens with color, type, hierarchy, and visual rhythm.</p>
+          </article>
+          <article class="reveal" data-step="04">
+            <span>04</span>
+            <h3>Build & Learn</h3>
+            <p>Practice HTML, CSS, JavaScript basics, and improve through feedback.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section skills-section" id="skills">
+        <div class="section-heading reveal">
+          <span class="section-kicker">Capabilities</span>
+          <h2>Design foundations supported by web basics and collaboration skills.</h2>
+        </div>
+        <div class="skill-columns">
+          <div class="skill-panel reveal">
+            <h3>Design</h3>
+            <ul>
+              <li style="--level: 88%"><span>UI/UX design</span></li>
+              <li style="--level: 82%"><span>Wireframes</span></li>
+              <li style="--level: 84%"><span>Screen layouts</span></li>
+              <li style="--level: 78%"><span>User flows</span></li>
+              <li style="--level: 74%"><span>Visual design basics</span></li>
+            </ul>
+          </div>
+          <div class="skill-panel reveal">
+            <h3>Tools & Web</h3>
+            <ul>
+              <li style="--level: 88%"><span>Figma</span></li>
+              <li style="--level: 80%"><span>Canva</span></li>
+              <li style="--level: 76%"><span>Microsoft Office</span></li>
+              <li style="--level: 72%"><span>Microsoft Copilot</span></li>
+              <li style="--level: 68%"><span>HTML, CSS, JavaScript</span></li>
+            </ul>
+          </div>
+          <div class="skill-panel reveal">
+            <h3>Soft Skills</h3>
+            <ul>
+              <li style="--level: 90%"><span>Communication</span></li>
+              <li style="--level: 88%"><span>Teamwork</span></li>
+              <li style="--level: 84%"><span>Problem solving</span></li>
+              <li style="--level: 92%"><span>Quick learning</span></li>
+              <li style="--level: 82%"><span>Time management</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="experience">
+        <div class="section-heading reveal">
+          <span class="section-kicker">Experience</span>
+          <h2>Internships and training across UI/UX, full stack basics, and AI/ML.</h2>
+        </div>
+        <div class="timeline">
+          <article class="reveal">
+            <span>21 Jan 2026 - 10 Apr 2026</span>
+            <h3>AI and Machine Learning Intern</h3>
+            <p>Microsoft Elevate - GTU Internship Program with Fice Education Pvt. Ltd.</p>
+            <p>Completed a 12-week program covering AI, machine learning, Microsoft Copilot, and emerging technologies.</p>
+          </article>
+          <article class="reveal">
+            <span>26 Dec 2025 - 29 Jan 2026</span>
+            <h3>Full Stack Development Trainee</h3>
+            <p>Flikt Technology Web Solution</p>
+            <p>Practiced front-end and back-end fundamentals while learning the complete flow of a web project.</p>
+          </article>
+          <article class="reveal">
+            <span>01 Jan 2025 - 31 Jan 2025</span>
+            <h3>UI/UX Designer Intern</h3>
+            <p>EazyByts Web Solutions</p>
+            <p>Created clean screens for web projects and learned to translate requirements into user-friendly interfaces.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section education-section" id="education">
+        <div class="section-heading reveal">
+          <span class="section-kicker">Education & Certificates</span>
+          <h2>Computer engineering background with design and AI learning credentials.</h2>
+        </div>
+        <div class="education-grid">
+          <article class="reveal">
+            <h3>Bachelor of Engineering</h3>
+            <p>Computer Science & Engineering</p>
+            <span>Ahmedabad Institute of Technology | May 2023 - Current</span>
+          </article>
+          <article class="reveal">
+            <h3>Diploma in Computer Engineering</h3>
+            <p>Om Institute of Engineering and Technology, Junagadh</p>
+            <span>Nov 2020 - May 2023</span>
+          </article>
+          <article class="reveal">
+            <h3>Certificates</h3>
+            <p>Microsoft Elevate AI/ML, EazyByts UI/UX Internship, Flikt Full Stack Training</p>
+            <span>Jan 2025 - Apr 2026</span>
+          </article>
+          <article class="reveal">
+            <h3>Languages</h3>
+            <p>Gujarati native, Hindi fluent, English basic</p>
+            <span>Ahmedabad, Gujarat</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-section reveal" id="contact">
+        <div>
+          <span class="section-kicker">Contact</span>
+          <h2>Let’s build clean, useful interfaces.</h2>
+          <p>
+            I am open to UI/UX design internships, front-end learning opportunities, and projects
+            where thoughtful layouts and quick learning matter.
+          </p>
+        </div>
+        <div class="contact-card">
+          <a href="mailto:shivamgohel477@gmail.com">shivamgohel477@gmail.com</a>
+          <a href="tel:+919327672194">+91 93276 72194</a>
+          <a href="http://127.0.0.1:5500/portfolio_index_new.html" target="_blank" rel="noreferrer">Portfolio / LinkedIn</a>
+          <span>Ahmedabad, Gujarat</span>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Shyam Gohel. UI/UX portfolio experience.</p>
+      <a href="#home">Back to top</a>
+    </footer>
+
+    <script src="portfolio_script_new.js"></script>
+  </body>
+</html>
