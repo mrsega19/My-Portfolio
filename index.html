@@ -35,6 +35,7 @@
         <a href="#skills">Skills</a>
         <a href="#experience">Experience</a>
         <a href="#education">Education</a>
+        <a href="#feedback">Feedback</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
@@ -42,16 +43,17 @@
     <main>
       <section class="hero" id="home">
         <div class="hero-copy">
-          <p class="eyebrow">UI/UX Designer | Front-End Learner | AI & ML Enthusiast</p>
+          <p class="eyebrow"><span data-typewriter="role">UI/UX Designer</span></p>
           <h1>
             Building friendly interfaces with
-            <span>design sense</span>, web basics, and AI curiosity.
+            <span class="typewriter-word" data-typewriter="hero">design sense</span>, web basics, and AI curiosity.
           </h1>
           <p class="hero-text">
             I design clean screens, user flows, and responsive web experiences while learning new
             tools quickly. My work blends Figma, front-end practice, and practical exposure to AI,
             machine learning, Microsoft Copilot, and emerging technology.
           </p>
+          <p class="hero-signature">Selected portfolio of Shyam Gohel, crafted for clear product thinking and polished digital interfaces.</p>
           <div class="hero-actions">
             <a class="button primary magnetic" href="#work">Explore Work</a>
             <a class="button ghost magnetic" href="#contact">Contact Me</a>
@@ -113,66 +115,10 @@
           <span class="section-kicker">Selected Work</span>
           <h2>Project-wise visuals for product flows, food websites, streaming, and AI detection.</h2>
         </div>
-        <div class="project-grid">
-          <article class="project-card feature-card tilt-card reveal" data-theme="vedai">
-            <figure>
-               <img src="./assets/project-vedai.png" alt="VedAI login and signup interface image" />
-            </figure>
-            <div class="project-content">
-              <p class="tag">Figma | Login Flow</p>
-              <h3>Login & Signup Page - VedAI Startup</h3>
-              <p>Clean signup and login screens for a tech startup with focused account entry and calm visual hierarchy.</p>
-              <ul class="project-points">
-                <li>Simple form layout</li>
-                <li>Startup-ready visual style</li>
-                <li>Clear action path</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="project-card tilt-card reveal" data-theme="streamo">
-            <figure>
-               <img src="./assets/project-streamo.png" alt="Streamo movie streaming website image" />
-            </figure>
-            <div class="project-content">
-              <p class="tag">Figma | Entertainment</p>
-              <h3>Streamo - Movie Streaming Website</h3>
-              <p>Sleek movie discovery landing page focused on browsing, previewing, and finding content quickly.</p>
-            </div>
-          </article>
-
-          <article class="project-card tilt-card reveal" data-theme="donoute">
-            <figure>
-                <img src="./assets/project-donoute.png" alt="Donoute sweets and donut website image" />
-            </figure>
-            <div class="project-content">
-              <p class="tag">Figma | Food Brand</p>
-              <h3>Donoute - Donut Shop Website</h3>
-              <p>Colorful homepage concept for a sweets and donut shop with friendly product-focused sections.</p>
-            </div>
-          </article>
-
-          <article class="project-card tilt-card reveal" data-theme="pizza">
-            <figure>
-              <img src="./assets/project-pizza.png" alt="Pizza order website image" />
-            </figure>
-            <div class="project-content">
-              <p class="tag">Figma | Ordering Flow</p>
-              <h3>Pizza Order Website</h3>
-              <p>Menu browsing, cart review, and checkout interface designed for quick ordering and easy scanning.</p>
-            </div>
-          </article>
-
-          <article class="project-card tilt-card reveal" data-theme="ai">
-            <figure>
-              <img src="./assets/project-ai-surveillance.png" alt="AI powered surveillance dashboard image" />
-            </figure>
-            <div class="project-content">
-              <p class="tag">Python | AI/ML | OpenCV</p>
-              <h3>AI-Powered Border Defence and Surveillance</h3>
-              <p>Camera-feed monitoring concept using Python, OpenCV, and ML logic for detection and real-time alerts.</p>
-            </div>
-          </article>
+        <div class="project-grid" id="projectGrid" aria-live="polite"></div>
+        <div class="figma-link-strip reveal">
+          <p class="tag">More Figma Projects</p>
+          <div class="figma-link-grid" id="figmaLinks" aria-label="Additional Figma project links"></div>
         </div>
       </section>
 
@@ -181,28 +127,7 @@
           <span class="section-kicker">Design Process</span>
           <h2>From requirement to interface with a practical UI/UX workflow.</h2>
         </div>
-        <div class="process-track">
-          <article class="reveal" data-step="01">
-            <span>01</span>
-            <h3>Understand</h3>
-            <p>Read requirements, identify user needs, and map the screen purpose.</p>
-          </article>
-          <article class="reveal" data-step="02">
-            <span>02</span>
-            <h3>Wireframe</h3>
-            <p>Sketch the flow, layout priority, and useful interaction path.</p>
-          </article>
-          <article class="reveal" data-step="03">
-            <span>03</span>
-            <h3>Design</h3>
-            <p>Create clean screens with color, type, hierarchy, and visual rhythm.</p>
-          </article>
-          <article class="reveal" data-step="04">
-            <span>04</span>
-            <h3>Build & Learn</h3>
-            <p>Practice HTML, CSS, JavaScript basics, and improve through feedback.</p>
-          </article>
-        </div>
+        <div class="process-track" id="processTrack"></div>
       </section>
 
       <section class="section skills-section" id="skills">
@@ -210,38 +135,7 @@
           <span class="section-kicker">Capabilities</span>
           <h2>Design foundations supported by web basics and collaboration skills.</h2>
         </div>
-        <div class="skill-columns">
-          <div class="skill-panel reveal">
-            <h3>Design</h3>
-            <ul>
-              <li style="--level: 88%"><span>UI/UX design</span></li>
-              <li style="--level: 82%"><span>Wireframes</span></li>
-              <li style="--level: 84%"><span>Screen layouts</span></li>
-              <li style="--level: 78%"><span>User flows</span></li>
-              <li style="--level: 74%"><span>Visual design basics</span></li>
-            </ul>
-          </div>
-          <div class="skill-panel reveal">
-            <h3>Tools & Web</h3>
-            <ul>
-              <li style="--level: 88%"><span>Figma</span></li>
-              <li style="--level: 80%"><span>Canva</span></li>
-              <li style="--level: 76%"><span>Microsoft Office</span></li>
-              <li style="--level: 72%"><span>Microsoft Copilot</span></li>
-              <li style="--level: 68%"><span>HTML, CSS, JavaScript</span></li>
-            </ul>
-          </div>
-          <div class="skill-panel reveal">
-            <h3>Soft Skills</h3>
-            <ul>
-              <li style="--level: 90%"><span>Communication</span></li>
-              <li style="--level: 88%"><span>Teamwork</span></li>
-              <li style="--level: 84%"><span>Problem solving</span></li>
-              <li style="--level: 92%"><span>Quick learning</span></li>
-              <li style="--level: 82%"><span>Time management</span></li>
-            </ul>
-          </div>
-        </div>
+        <div class="skill-columns" id="skillColumns"></div>
       </section>
 
       <section class="section" id="experience">
@@ -249,26 +143,7 @@
           <span class="section-kicker">Experience</span>
           <h2>Internships and training across UI/UX, full stack basics, and AI/ML.</h2>
         </div>
-        <div class="timeline">
-          <article class="reveal">
-            <span>21 Jan 2026 - 10 Apr 2026</span>
-            <h3>AI and Machine Learning Intern</h3>
-            <p>Microsoft Elevate - GTU Internship Program with Fice Education Pvt. Ltd.</p>
-            <p>Completed a 12-week program covering AI, machine learning, Microsoft Copilot, and emerging technologies.</p>
-          </article>
-          <article class="reveal">
-            <span>26 Dec 2025 - 29 Jan 2026</span>
-            <h3>Full Stack Development Trainee</h3>
-            <p>Flikt Technology Web Solution</p>
-            <p>Practiced front-end and back-end fundamentals while learning the complete flow of a web project.</p>
-          </article>
-          <article class="reveal">
-            <span>01 Jan 2025 - 31 Jan 2025</span>
-            <h3>UI/UX Designer Intern</h3>
-            <p>EazyByts Web Solutions</p>
-            <p>Created clean screens for web projects and learned to translate requirements into user-friendly interfaces.</p>
-          </article>
-        </div>
+        <div class="timeline" id="experienceTimeline"></div>
       </section>
 
       <section class="section education-section" id="education">
@@ -276,27 +151,49 @@
           <span class="section-kicker">Education & Certificates</span>
           <h2>Computer engineering background with design and AI learning credentials.</h2>
         </div>
-        <div class="education-grid">
-          <article class="reveal">
-            <h3>Bachelor of Engineering</h3>
-            <p>Computer Science & Engineering</p>
-            <span>Ahmedabad Institute of Technology | May 2023 - Current</span>
-          </article>
-          <article class="reveal">
-            <h3>Diploma in Computer Engineering</h3>
-            <p>Om Institute of Engineering and Technology, Junagadh</p>
-            <span>Nov 2020 - May 2023</span>
-          </article>
-          <article class="reveal">
-            <h3>Certificates</h3>
-            <p>Microsoft Elevate AI/ML, EazyByts UI/UX Internship, Flikt Full Stack Training</p>
-            <span>Jan 2025 - Apr 2026</span>
-          </article>
-          <article class="reveal">
-            <h3>Languages</h3>
-            <p>Gujarati native, Hindi fluent, English basic</p>
-            <span>Ahmedabad, Gujarat</span>
-          </article>
+        <div class="education-grid" id="educationGrid"></div>
+      </section>
+
+      <section class="section feedback-section" id="feedback">
+        <div class="section-heading reveal">
+          <span class="section-kicker">Feedback</span>
+          <h2>Share quick feedback and see it appear instantly.</h2>
+        </div>
+        <div class="feedback-layout">
+          <form class="feedback-form reveal" id="feedbackForm">
+            <div class="form-row">
+              <label for="feedbackName">Name</label>
+              <input id="feedbackName" name="name" type="text" placeholder="Your name" required />
+            </div>
+            <div class="form-row">
+              <label for="feedbackEmail">Email</label>
+              <input id="feedbackEmail" name="email" type="email" placeholder="you@example.com" required />
+            </div>
+            <div class="form-row">
+              <label for="feedbackRating">Rating</label>
+              <select id="feedbackRating" name="rating" required>
+                <option value="5">5 - Excellent</option>
+                <option value="4">4 - Very good</option>
+                <option value="3">3 - Good</option>
+                <option value="2">2 - Needs work</option>
+                <option value="1">1 - Poor</option>
+              </select>
+            </div>
+            <div class="form-row full">
+              <label for="feedbackMessage">Message</label>
+              <textarea id="feedbackMessage" name="message" rows="5" placeholder="Write your feedback here" required></textarea>
+            </div>
+            <button class="button primary magnetic" type="submit">Submit Feedback</button>
+            <p class="form-status" id="feedbackStatus" role="status" aria-live="polite"></p>
+          </form>
+
+          <aside class="feedback-list-panel reveal" aria-label="Submitted feedback">
+            <div class="feedback-list-heading">
+              <h3>Recent Feedback</h3>
+              <button class="project-link alt" id="clearFeedback" type="button">Clear</button>
+            </div>
+            <div class="feedback-list" id="feedbackList"></div>
+          </aside>
         </div>
       </section>
 
