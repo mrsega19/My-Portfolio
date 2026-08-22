@@ -3,222 +3,222 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shyam Gohel | UI/UX Portfolio</title>
+    <title>Shyam Gohel — UI/UX Designer &amp; Frontend Developer</title>
     <meta
       name="description"
-      content="Animated UI/UX portfolio of Shyam Gohel, a designer, front-end learner, and AI/ML technology enthusiast from Ahmedabad."
+      content="Portfolio of Shyam Gohel, a UI/UX designer and frontend developer based in Ahmedabad, India. Explore interface design work, front-end projects, and experience."
+    />
+    <meta name="theme-color" content="#101114" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Shyam Gohel — UI/UX Designer & Frontend Developer" />
+    <meta
+      property="og:description"
+      content="Interface design and front-end development portfolio of Shyam Gohel, based in Ahmedabad, India."
+    />
+    <meta property="og:image" content="./assets/hero-portfolio.png" />
+
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
     />
     <link rel="stylesheet" href="portfolio_styles_new.css" />
   </head>
   <body>
-    <div class="cursor-light" aria-hidden="true"></div>
     <div class="scroll-progress" aria-hidden="true"></div>
-    <div class="ambient-stage" aria-hidden="true">
-      <span class="mesh mesh-one"></span>
-      <span class="mesh mesh-two"></span>
-      <span class="mesh mesh-three"></span>
-      <span class="orbit orbit-one"></span>
-      <span class="orbit orbit-two"></span>
-    </div>
 
-    <header class="site-header">
-      <a class="brand" href="#home" aria-label="Shyam Gohel home">
-        <span>SG</span>
-        <strong>Shyam Gohel</strong>
-      </a>
-      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
-        <span></span>
-        <span></span>
-      </button>
-      <nav class="site-nav" aria-label="Primary navigation">
-        <a href="#work">Work</a>
+    <header class="site-header" id="siteHeader">
+      <a class="brand" href="#home" aria-label="Shyam Gohel — home">SHYAM</a>
+
+      <nav class="site-nav" id="siteNav" aria-label="Primary">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
         <a href="#skills">Skills</a>
+        <a href="#work">Projects</a>
         <a href="#experience">Experience</a>
-        <a href="#education">Education</a>
-        <a href="#feedback">Feedback</a>
         <a href="#contact">Contact</a>
       </nav>
+
+      <div class="header-actions">
+        <a class="button primary small" href="Shyam_Resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="siteNav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </header>
 
     <main>
+      <!-- HERO -->
       <section class="hero" id="home">
-        <div class="hero-copy">
-          <p class="eyebrow"><span data-typewriter="role">UI/UX Designer</span></p>
-          <h1>
-            Building friendly interfaces with
-            <span class="typewriter-word" data-typewriter="hero">design sense</span>, web basics,<br />
-            and AI curiosity.
-          </h1>
-          <p class="hero-text">
-            I design clean screens, user flows, and responsive web experiences while learning new
-            tools quickly. My work blends Figma, front-end practice, and practical exposure to AI,
-            machine learning, Microsoft Copilot, and emerging technology.
+        <div class="hero-inner">
+          <p class="status-pill reveal">
+            <span class="status-dot" aria-hidden="true"></span> Open to opportunities
           </p>
-          <p class="hero-signature">Selected portfolio of Shyam Gohel, crafted for clear product thinking and polished digital interfaces.</p>
-          <div class="hero-actions">
-            <a class="button primary magnetic" href="#work">Explore Work</a>
-            <a class="button ghost magnetic" href="#contact">Contact Me</a>
-            <a class="button soft magnetic" href="Shyam_Resume.pdf" target="_blank" rel="noreferrer">Resume PDF</a>
+
+          <h1 class="hero-name reveal" style="--delay:60ms">Shyam Gohel</h1>
+          <p class="hero-role reveal" style="--delay:120ms">UI/UX Designer &amp; Frontend Developer</p>
+
+          <p class="hero-statement reveal" style="--delay:180ms">
+            Designing clean digital experiences and building responsive interfaces that are
+            simple, useful, and visually engaging.
+          </p>
+
+          <div class="hero-actions reveal" style="--delay:240ms">
+            <a class="button primary" href="#work">View My Work</a>
+            <a class="button outline" href="Shyam_Resume.pdf" target="_blank" rel="noreferrer">Download Resume</a>
           </div>
-          <dl class="hero-stats" aria-label="Portfolio highlights">
-            <div>
-              <dt data-count="5">0</dt>
-              <dd>Portfolio projects</dd>
-            </div>
-            <div>
-              <dt data-count="3">0</dt>
-              <dd>Internship / training programs</dd>
-            </div>
-            <div>
-              <dt data-count="12">0</dt>
-              <dd>Weeks AI/ML internship</dd>
-            </div>
-          </dl>
+
+          <div class="hero-socials reveal" style="--delay:300ms" id="heroSocials"></div>
+
+          <div class="hero-metrics reveal" style="--delay:360ms" aria-label="Portfolio highlights">
+            <span><strong>UI</strong> Research</span>
+            <span><strong>UX</strong> Prototype</span>
+            <span><strong>DEV</strong> Frontend</span>
+          </div>
         </div>
 
-        <div class="hero-showcase" aria-label="Portfolio visual preview">
-          <div class="hero-device tilt-card">
-              <img src="./assets/hero-portfolio.png" alt="Animated portfolio interface preview" />
-          </div>
-          <div class="floating-card card-research">
-            <span></span>
-            <strong>Research</strong>
-            <small>Requirements to flow</small>
-          </div>
-          <div class="floating-card card-prototype">
-            <span></span>
-            <strong>Prototype</strong>
-            <small>Clickable screen ideas</small>
-          </div>
-          <div class="floating-card card-ai">
-            <span></span>
-            <strong>AI Aware</strong>
-            <small>Copilot + ML basics</small>
-          </div>
+        <div class="hero-visual reveal" style="--delay:180ms">
+          <span class="visual-ring ring-one" aria-hidden="true"></span>
+          <span class="visual-ring ring-two" aria-hidden="true"></span>
+          <img src="./assets/hero-portfolio.png" alt="Portfolio interface artwork for Shyam Gohel" loading="eager" />
         </div>
-        
       </section>
 
-      <section class="section intro-band reveal" aria-label="Profile">
-        <div>
-          <span class="section-kicker">Profile</span>
-          <h2>Clear layouts, simple flows, and a fast-learning mindset.</h2>
-        </div>
-        <p>
-          I enjoy turning requirements into clean digital screens, improving layouts for users,
-          and converting design ideas into readable front-end code. I am comfortable learning
-          new tools, collaborating with teams, and building practical user-friendly experiences.
-        </p>
-      </section>
-
-      <section class="section" id="work">
+      <!-- ABOUT -->
+      <section class="section about-section" id="about">
         <div class="section-heading reveal">
-          <span class="section-kicker">Selected Work</span>
-          <h2>Project-wise visuals for product flows, food websites, streaming, and AI detection.</h2>
+          <span class="kicker">About</span>
+          <h2>A little about how I work.</h2>
         </div>
-        <div class="project-grid" id="projectGrid" aria-live="polite"></div>
-        <div class="figma-link-strip reveal">
-          <p class="tag">More Figma Projects</p>
-          <div class="figma-link-grid" id="figmaLinks" aria-label="Additional Figma project links"></div>
+
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p>
+              I'm a UI/UX designer and frontend developer based in Ahmedabad, India. I enjoy
+              turning requirements into clean, well-structured screens — starting from user flows
+              and wireframes, then refining layouts until they feel simple and easy to use.
+            </p>
+            <p>
+              Alongside design, I build the front end of the interfaces I design, translating
+              layouts into responsive HTML, CSS, and JavaScript. I've also worked with AI and
+              machine learning fundamentals, including practical exposure to Python, OpenCV, and
+              Microsoft Copilot, which shapes how I think about smarter, more useful interfaces.
+            </p>
+            <p>
+              I work well in teams, pick up new tools quickly, and care about getting the small
+              details — spacing, hierarchy, consistency — right.
+            </p>
+
+            <ul class="about-facts">
+              <li><span>Based in</span> Ahmedabad, Gujarat</li>
+              <li><span>Focus</span> UI/UX Design · Frontend Development</li>
+              <li><span>Currently</span> B.E. Computer Science &amp; Engineering</li>
+            </ul>
+          </div>
+
+          <div class="about-visual reveal" style="--delay:80ms">
+            <div class="about-portrait">
+              <img src="./assets/profile-portrait-ai.jpg" alt="Portrait of Shyam Gohel" loading="lazy" />
+            </div>
+            <div class="about-stat-row" id="aboutStats"></div>
+          </div>
         </div>
       </section>
 
-      <section class="section process-section">
-        <div class="section-heading reveal">
-          <span class="section-kicker">Design Process</span>
-          <h2>From requirement to interface with a practical UI/UX workflow.</h2>
-        </div>
-        <div class="process-track" id="processTrack"></div>
-      </section>
-
+      <!-- SKILLS -->
       <section class="section skills-section" id="skills">
         <div class="section-heading reveal">
-          <span class="section-kicker">Capabilities</span>
-          <h2>Design foundations supported by web basics and collaboration skills.</h2>
+          <span class="kicker">Skills</span>
+          <h2>Tools and technologies I work with.</h2>
         </div>
-        <div class="skill-columns" id="skillColumns"></div>
+        <div class="skills-grid" id="skillsGrid"></div>
       </section>
 
+      <!-- PROJECTS -->
+      <section class="section" id="work">
+        <div class="section-heading reveal">
+          <span class="kicker">Selected Work</span>
+          <h2>Featured projects.</h2>
+        </div>
+        <div class="project-list" id="projectList"></div>
+
+        <div class="more-links reveal">
+          <p class="more-links-label">Additional design exercises on Figma</p>
+          <div class="more-links-grid" id="moreLinks"></div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
       <section class="section" id="experience">
         <div class="section-heading reveal">
-          <span class="section-kicker">Experience</span>
-          <h2>Internships and training across UI/UX, full stack basics, and AI/ML.</h2>
+          <span class="kicker">Experience</span>
+          <h2>Internships &amp; training.</h2>
         </div>
-        <div class="timeline" id="experienceTimeline"></div>
-      </section>
+        <div class="timeline" id="timeline"></div>
 
-      <section class="section education-section" id="education">
-        <div class="section-heading reveal">
-          <span class="section-kicker">Education & Certificates</span>
-          <h2>Computer engineering background with design and AI learning credentials.</h2>
-        </div>
-        <div class="education-grid" id="educationGrid"></div>
-      </section>
-
-      <section class="section feedback-section" id="feedback">
-        <div class="section-heading reveal">
-          <span class="section-kicker">Feedback</span>
-          <h2>Share quick feedback and see it appear instantly.</h2>
-        </div>
-        <div class="feedback-layout">
-          <form class="feedback-form reveal" id="feedbackForm">
-            <div class="form-row">
-              <label for="feedbackName">Name</label>
-              <input id="feedbackName" name="name" type="text" placeholder="Your name" required />
-            </div>
-            <div class="form-row">
-              <label for="feedbackEmail">Email</label>
-              <input id="feedbackEmail" name="email" type="email" placeholder="you@example.com" required />
-            </div>
-            <div class="form-row">
-              <label for="feedbackRating">Rating</label>
-              <select id="feedbackRating" name="rating" required>
-                <option value="5">5 - Excellent</option>
-                <option value="4">4 - Very good</option>
-                <option value="3">3 - Good</option>
-                <option value="2">2 - Needs work</option>
-                <option value="1">1 - Poor</option>
-              </select>
-            </div>
-            <div class="form-row full">
-              <label for="feedbackMessage">Message</label>
-              <textarea id="feedbackMessage" name="message" rows="5" placeholder="Write your feedback here" required></textarea>
-            </div>
-            <button class="button primary magnetic" type="submit">Submit Feedback</button>
-            <p class="form-status" id="feedbackStatus" role="status" aria-live="polite"></p>
-          </form>
-
-          <aside class="feedback-list-panel reveal" aria-label="Submitted feedback">
-            <div class="feedback-list-heading">
-              <h3>Recent Feedback</h3>
-              <button class="project-link alt" id="clearFeedback" type="button">Clear</button>
-            </div>
-            <div class="feedback-list" id="feedbackList"></div>
-          </aside>
+        <div class="education-block reveal">
+          <h3>Education</h3>
+          <div class="education-grid" id="educationGrid"></div>
         </div>
       </section>
 
-      <section class="contact-section reveal" id="contact">
+      <!-- RESUME CTA -->
+      <section class="resume-cta reveal">
         <div>
-          <span class="section-kicker">Contact</span>
-          <h2>Let’s build clean, useful interfaces.</h2>
-          <p>
-            I am open to UI/UX design internships, front-end learning opportunities, and projects
-            where thoughtful layouts and quick learning matter.
-          </p>
+          <h2>Let's build something meaningful.</h2>
+          <p>Interested in working together or discussing an opportunity?</p>
         </div>
-        <div class="contact-card">
-          <a href="mailto:shivamgohel477@gmail.com">shivamgohel477@gmail.com</a>
-          <a href="tel:+919327672194">+91 93276 72194</a>
-          <a href="https://www.linkedin.com/in/shyamgohel14/" target="_blank" rel="noreferrer">Portfolio / LinkedIn</a>
-          <span>Ahmedabad, Gujarat</span>
+        <div class="resume-cta-actions">
+          <a class="button primary" href="Shyam_Resume.pdf" target="_blank" rel="noreferrer">Download Resume</a>
+          <a class="button outline light" href="#contact">Contact Me</a>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="section contact-section" id="contact">
+        <div class="section-heading reveal">
+          <span class="kicker">Contact</span>
+          <h2>Let's work together.</h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal" id="contactInfo"></div>
+
+          <form class="contact-form reveal" id="contactForm" novalidate>
+            <div class="form-row">
+              <label for="cfName">Name</label>
+              <input id="cfName" name="name" type="text" placeholder="Your name" required />
+            </div>
+            <div class="form-row">
+              <label for="cfEmail">Email</label>
+              <input id="cfEmail" name="email" type="email" placeholder="you@example.com" required />
+            </div>
+            <div class="form-row">
+              <label for="cfMessage">Message</label>
+              <textarea id="cfMessage" name="message" rows="5" placeholder="Tell me about the opportunity or project" required></textarea>
+            </div>
+            <button class="button primary" type="submit">Send Message</button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
         </div>
       </section>
     </main>
 
-    <footer>
-      <p>®2025 Shyam Gohel. UI/UX portfolio experience.</p>
-      <a href="#home">Back to top</a>
+    <footer class="site-footer">
+      <div class="footer-top">
+        <div>
+          <p class="footer-name">Shyam Gohel</p>
+          <p class="footer-role">UI/UX Designer &amp; Frontend Developer</p>
+        </div>
+        <div class="footer-links" id="footerLinks"></div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Shyam Gohel. All rights reserved.</p>
+        <a href="#home">Back to top ↑</a>
+      </div>
     </footer>
 
     <script src="portfolio_script_new.js"></script>
